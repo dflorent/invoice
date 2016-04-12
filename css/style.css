@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color black;
+    padding: 30px 0;
+}
+
+input,
+textarea {
+    border: 1px dotted #ccc;
+    padding: 5px;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+.row {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.row--second {
+    margin-top: 30px;
+}
+
+.row > .col {
+    width: 50%;
+}
+
+.row > .col:first-child {
+    margin-right: 80px;
+}
+
+.bordered {
+    border-top: 2px solid black;
+    padding-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    margin: 2px 0;
+    line-height: 35px;
+    padding: 0 20px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 3px;
+    color: black;
+    background: white;
+    border-color: #e9e9e9;
+    text-decoration: none;
+}
+
+.btn--red {
+    color: white;
+    background-color: #c91013;
+    border-color: #a10d0f;
+    box-shadow: inset 0 1px 0 #cf6062;
+}
+
+.btn--green {
+    color: white;
+    background-color: #28b840;
+    border-color: #209333;
+    box-shadow: inset 0 1px 0 #72c880;
+}
+
+.btn--blue {
+    color: white;
+    background-color: #0095ff;
+    border-color: #07c;
+    box-shadow: inset 0 1px 0 #66bfff;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.company-name,
+.client-name {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.from,
+.to,
+.siret,
+.info {
+    margin-top: 15px;
+}
+
+.siret,
+.invoice-number {
+    font-weight: bold;
+}
+
+.from textarea {
+    height: 115px;
+}
+
+.to {
+    height: 245px;
+}
+
+.invoice-items {
+    border-collapse: separate;
+    margin-top: 45px;
+    width: 100%;
+}
+
+.invoice-items th,
+.invoice-items td {
+    text-align: left;
+}
+
+.invoice-items th {
+    padding: 20px 20px 10px 0;
+}
+
+.invoice-items td {
+    padding-right: 20px;
+    font-size: 16px;
+}
+
+.invoice-items td textarea {
+    height: 60px;
+}
+
+.invoice-items tbody tr {
+    vertical-align: top;
+}
+
+.invoice-items__desc,
+.invoice-items__quantity,
+.invoice-items__unit,
+.invoice-items__total {
+    border-top: 1px solid #ccc;
+}
+
+.invoice-items__desc {
+    width: 46%;
+}
+
+.invoice-items__quantity,
+.invoice-items__unit,
+.invoice-items__total {
+    width: 18%;
+}
+
+.remove-wrapper {
+    position: relative;
+}
+
+.remove-btn {
+    position: absolute;
+    left: -130px;
+    top: -2px;
+    width: 120px;
+}
+
+.discount {
+    text-align: right;
+    width: 115px;
+}
+
+.total-row {
+    overflow: hidden;
+}
+
+.total-row__label {
+    font-weight: bold;
+    float: left;
+}
+
+.total-row__amount {
+    font-weight: bold;
+    float: right;
+}
+
+.terms {
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.terms textarea {
+    height: 90px;
+}

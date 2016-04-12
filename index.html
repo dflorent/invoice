@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facture éditable auto-entrepreneur</title>
+        <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="row">
+                <div class="col bordered">
+                    <div class="company-name">
+                        <input type="text" placeholder="Vendeur">
+                    </div>
+                    <div class="from">
+                        <textarea placeholder="123 RUE
+12345 VILLE
+01 02 03 04 05
+contact@vendeur.fr"></textarea>
+                    </div>
+                    <div class="siret">
+                        <input type="text" placeholder="SIRET 123 456 789 012 34">
+                    </div>
+                    <div class="info">Dispensé d'immatriculation au registre du commerce et des sociétés (RCS) et au répertoire des métiers (RM)</div>
+                </div>
+                <div class="col bordered">
+                    <input type="text" placeholder="Acheteur" class="client-name">
+                    <textarea class="to" placeholder="123 RUE
+12345 VILLE
+01 02 03 04 05
+contact@acheteur.fr"></textarea>
+                </div>
+            </div>
+
+            <div class="row row--second">
+                <div class="col bordered">
+                    <div class="invoice-number">Facture n°<span id="invoice-number"></span></div>
+                </div>
+                <div class="col bordered">
+                    <div id="date"></div>
+                </div>
+            </div>
+
+            <table class="invoice-items" id="invoice-items">
+                <thead>
+                    <tr>
+                        <th class="invoice-items__desc">Désignation du produit ou de la prestation</th>
+                        <th class="invoice-items__quantity">Quantité</th>
+                        <th class="invoice-items__unit">Prix unitaire HT</th>
+                        <th class="invoice-items__total">Total HT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hide-printing">
+                        <td colspan="4">
+                            <a href="#" class="btn btn--green" id="add">Ajouter</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="row">
+                <div class="col"><!-- empty --></div>
+                <div class="col bordered">
+                    <div class="total-row">
+                        <div class="total-row__label">Remise</div>
+                        <div class="total-row__amount">
+                            <input type="text" min="0" step="5" placeholder="0" class="discount" id="discount"> &#37;
+                        </div>
+                    </div>
+                    <div class="total-row">
+                        <div class="total-row__label">Total HT</div>
+                        <div class="total-row__amount"><span id="total">0</span> &euro;</div>
+                    </div>
+                    <p>TVA non applicable, art. 293 B du CGI</p>
+                </div>
+            </div>
+
+            <div class="terms">
+                <textarea>Modalités de paiement et/ou date de livraison prévue</textarea>
+            </div>
+
+            <a href="#" class="btn btn--blue hide-printing" id="print">Imprimer</a>
+        </div>
+
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/moment/min/moment.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

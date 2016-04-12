@@ -1,0 +1,9 @@
+.hide-printing {
+    display: none;
+}
+
+input,
+textarea {
+    border: 0;
+    padding: 0;
+}

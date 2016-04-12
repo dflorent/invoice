@@ -1,0 +1,20 @@
+{
+  "name": "invoice",
+  "version": "1.0.0",
+  "description": "Editable invoice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files 'css/*.css, js/*.js, *.html' --no-open"
+  },
+  "author": "Florent Desjardins <florent.desjardins@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "moment": "^2.12.0",
+    "normalize.css": "^4.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.2"
+  }
+}
