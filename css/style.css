@@ -12,6 +12,8 @@ body {
 
 input,
 textarea {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 16px;
     border: 1px dotted #ccc;
     padding: 5px;
     width: 100%;
@@ -103,8 +105,8 @@ textarea {
     font-weight: bold;
 }
 
-.from textarea {
-    height: 115px;
+.from {
+    height: 120px;
 }
 
 .to {
