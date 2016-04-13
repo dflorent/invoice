@@ -3,6 +3,8 @@ Invoice
 
 Facture HTML & CSS éditable/imprimable pour auto-entrepreneur.
 
+[Démo](http://dflorent.github.io/invoice/)
+
 Pré-requis
 ==========
 
