@@ -14,6 +14,7 @@ Avant de commencer
 ==================
 
 ```
+echo 5.10.1 > .node-version
 ndevn install
 npm install
 ```
