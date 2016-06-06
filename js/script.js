@@ -5,6 +5,12 @@
     // invoice date
     $('#date').html(moment().format('DD/MM/YYYY'));
 
+    // switch between estimate and invoice
+    $('#switch').on('change', function(e) {
+        e.preventDefault();
+        $('#selected').html($(this).val());
+    });
+
     // add row to table invoice items
     $('#add').click(function(e) {
         e.preventDefault();
