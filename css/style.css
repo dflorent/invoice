@@ -24,6 +24,16 @@ textarea {
     line-height: 1.8;
 }
 
+.switch {
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: url('https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_arrow_drop_down_48px-20.png') transparent 90% center no-repeat;
+    border: 1px solid #eee;
+    border-radius: 0;
+    padding: 10px 35px 10px 15px;
+    margin-bottom: 30px;
+}
+
 .row {
     display: -ms-flex;
     display: -webkit-flex;

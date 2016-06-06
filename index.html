@@ -10,6 +10,10 @@
     </head>
     <body>
         <div class="wrapper">
+            <select class="switch hide-printing" id="switch">
+                <option value="Facture n°">Facture</option>
+                <option value="Devis n°">Devis</option>
+            </select>
             <div class="row">
                 <div class="col bordered">
                     <input class="company-name" type="text" placeholder="Vendeur">
@@ -31,7 +35,7 @@ contact@acheteur.fr"></textarea>
 
             <div class="row row--second">
                 <div class="col bordered">
-                    <div class="invoice-number">Facture n°<span id="invoice-number"></span></div>
+                    <div class="invoice-number"><span id="selected">Facture n°</span><span id="invoice-number"></span></div>
                 </div>
                 <div class="col bordered">
                     <div id="date"></div>
